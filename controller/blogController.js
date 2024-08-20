@@ -1,11 +1,11 @@
-const {user} = require('../models')
+const {users} = require('../models')
 // this is table 
 exports.Pregister =async(req,res)=>{
-    res.send("iam post method")
+    // res.send("iam post method")
     const email = req.body.email
     const username = req.body.username
     const password = req.body.password
-    await user.create({
+    await users.create({
         email:email,
         password:password,
         username:username
