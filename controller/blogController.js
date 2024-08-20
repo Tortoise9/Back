@@ -9,6 +9,7 @@ exports.Pregister =async(req,res)=>{
         password:password,
         username:username
     })
+    console.log("created sucessfully")
 
 }
 exports.renderRegister = (req,res)=>{
