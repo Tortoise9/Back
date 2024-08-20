@@ -11,7 +11,7 @@ exports.Pregister =async(req,res)=>{
         username:username
     })
     console.log("created sucessfully")
-
+    req.send("sucessfully created")
 }
 exports.renderRegister = (req,res)=>{
     res.send("register")
