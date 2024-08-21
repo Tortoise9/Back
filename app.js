@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const {user} =require('./models/index')
 const cors = require('cors')
-app.use(cors())
+app.use(cors(
+    {origin:"http://localhost:5173/"}
+))
 // it will allow every origin we can restrict it too
 // app.user(cors(
 // {origin: 'https://http://localhost:3000} 
